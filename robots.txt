@@ -1,0 +1,7 @@
+# STAGING - the whole site is closed to crawlers while ACT-738 is on the
+# Netlify staging site. At production release, replace the two lines below
+# with "Allow: /" and restore the Sitemap line (ACT-738 META-2).
+User-agent: *
+Disallow: /
+
+# Sitemap: https://reportanemptyhome.co.uk/sitemap.xml

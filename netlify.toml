@@ -1,0 +1,12 @@
+# ReportAnEmptyHome.co.uk — ACT-738
+# The repository root is the deployable site, mirroring the governed Drive
+# folder "ACT-738 — FINAL ACT-768 HTML" exactly. No build step: the site is
+# static HTML with inline CSS/JS and local assets.
+
+[build]
+  publish = "."
+  command = ""
+
+# Endpoint constants in the HTML are blank by default (ACT-738 SEC-2).
+# Supabase and Brevo keys are injected as Netlify environment variables at
+# deploy time and are never committed (ACT-738 SEC-1).

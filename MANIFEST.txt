@@ -1,0 +1,29 @@
+ReportAnEmptyHome.co.uk - ACT-738 staging package
+Generated 05 September 2026 21:01 GMT
+Identical to local commit 5c18772 (not yet pushed).
+Upload the CONTENTS of this archive to the root of
+github.com/inspiredhunter/ReportAnEmptyHome on branch main.
+
+FILE                                            BYTES  SHA-256
+----------------------------------------------------------------------------------------------------------------------
+404.html                                        10144  468c6760db1af423731d0ac4befcba5997d8da6b644abec02b51d523354214d3
+README.md                                          20  bae2b45a81ef4c906287bbe9c43f64a946d0469cffa69d81bb4c80da823fa838
+_redirects                                        473  5f28174ed544e985e0b9d588415074dea1e6f73b04246263286d97dc61224c7e
+confirmation.html                               10193  cf13afe5d2fe1bc63bba8d0d586d3b141c4a5829cd7d693e1ad849c93a61ee96
+how-it-works.html                               10749  c935f159e862af417f289f7e49593c8442a56eb1e4ebc1b7ac2ac885d273de6e
+index.html                                      55848  f7033a3291a792c6177a3f76802429d321fcf17428079bbee7da9de6671d2b8f
+maintenance.html                                10185  ae1c1a066472ae0e29fc7a29279452535f7a536f9f4c9ae0d8d67f7fce2bda52
+netlify.toml                                      484  070da06c42a3fd0b895376d694f37d8d7526a7404a6e2bdb88484ad650af4124
+options.html                                    12247  54c227e27a66913fd00335f8c3644a7597e8b8c6f0bed2a08506e2a980813bc3
+owners.html                                     13185  f3de0e8bbcdf9ce283780271bee1eb6a9f8a9fa68b79eea86b2e8bb458aad349
+privacy.html                                    26840  51088963e5401f20705bfacc784b4b0de43704042c29c6c94381f78c83dcfe86
+reporter-terms.html                             12298  1a19cc8144db1294c875919414a51eee6f018686490ca1f4e186f278203ed3b0
+robots.txt                                        295  bdf768beaf549cca112d88fa7154a4c2b2e07e469bfbf3660fa82549654dfda0
+sitemap.xml                                       550  0bd70eb012ae957a51fd83751f24237ea09eab5884da8be8522e145bf020d45a
+subscribe.html                                  12647  4f6867afb50c7011da6a243635618251f488987d42de50db2d6c041b4bce9699
+unsubscribe.html                                10560  047bd135ae3e62b2de14935d70fbc6edc0aedddd09f2f1e89c28e817c6c66794
+assets/raeh-approved-wordmark.png               72811  0dc6d1609c6fa3d317f1c239aaa4e9762e1ec97b3979c381f27409c2356e2b36
+assets/uk-terraced-empty-home-hero.jpg         245643  cf59e4f17c5a7d2dbc151968144a21822951f6a9f8e893dbdca19911da52ecb1
+assets/uk-terraced-empty-home-hero.webp        183822  fb8d7f3194de0edfc5b59ffcab11307ebf8c7ac461fbf4b0f2acc7dcfbea3c3e
+----------------------------------------------------------------------------------------------------------------------
+TOTAL                                          688994  19 files

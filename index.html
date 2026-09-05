@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<title>Report an Empty Home | ReportAnEmptyHome.co.uk</title>
+<meta name="description" content="Tell us about an empty home you own or one you know of. Safe, secure and confidential.">
+<!-- STAGING ONLY - remove the robots meta below at production release (ACT-738 META-2) -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://reportanemptyhome.co.uk/">
+<meta property="og:site_name" content="ReportAnEmptyHome.co.uk">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Report an Empty Home">
+<meta property="og:description" content="Tell us about an empty home you own or one you know of. Safe, secure and confidential.">
+<meta property="og:url" content="https://reportanemptyhome.co.uk/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://reportanemptyhome.co.uk/assets/uk-terraced-empty-home-hero.jpg">
+<meta property="og:image:alt" content="A UK terraced row with one empty and unkempt home between two well-kept homes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Report an Empty Home">
+<meta name="twitter:description" content="Tell us about an empty home you own or one you know of. Safe, secure and confidential.">
+<meta name="twitter:image" content="https://reportanemptyhome.co.uk/assets/uk-terraced-empty-home-hero.jpg">
+<style>
+:root{
+  --aubergine:#321B46;
+  --amber:#F2A900;
+  --white:#FFFFFF;
+  --ivory:#FAF7F2;
+  --ink:#321B46;
+  --muted:#675D70;
+  --line:#D9D0DE;
+  --track:#E7E0EA;
+  --danger:#9F1D2D;
+  --success:#2D6A4F;
+  --shadow:0 16px 40px rgba(50,27,70,.12);
+  --radius:16px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{font-family:"Atkinson Hyperlegible Next",Arial,sans-serif;background:var(--ivory);color:var(--ink)}
+body{margin:0;min-width:320px;line-height:1.55;background:var(--ivory)}
+img{max-width:100%;height:auto}
+button,input,select,textarea{font:inherit}
+a{color:var(--aubergine)}
+.skip-link{position:fixed;left:16px;top:8px;z-index:9999;background:var(--amber);color:var(--aubergine);padding:12px 16px;min-height:44px;display:inline-flex;align-items:center;border-radius:6px;transform:translateY(-160%);font-weight:800}
+.skip-link:focus{transform:none}
+:focus-visible{outline:3px solid var(--white);outline-offset:2px;box-shadow:0 0 0 6px var(--amber),0 0 0 8px var(--aubergine)}
+.site-header{height:82px;background:var(--white);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,5vw,72px);gap:18px}
+.brand{display:inline-flex;align-items:center}
+.brand img{display:block;height:56px;width:auto}
+.header-action{min-height:44px;padding:9px 14px;border:0;border-radius:6px;background:var(--amber);color:var(--aubergine);font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.wrap{width:min(var(--max),calc(100% - 32px));margin:0 auto}
+main{min-height:calc(100vh - 82px)}
+.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(24px,5vw,56px)}
+h1,h2,h3{line-height:1.08;margin-top:0}
+h1{font-size:clamp(2.35rem,6vw,4.5rem)}
+h2{font-size:clamp(2rem,4vw,3rem)}
+h3{font-size:clamp(1.35rem,2.4vw,1.8rem)}
+.lead{font-size:clamp(1.1rem,2vw,1.35rem)}
+.meta{color:var(--muted);font-size:.95rem}
+.eyebrow{font-size:.88rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--aubergine)}
+.hero-copy .eyebrow{color:var(--amber)}
+.btn{min-height:48px;padding:12px 22px;border-radius:7px;border:2px solid transparent;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.btn-primary{background:var(--amber);color:var(--aubergine);border-color:var(--amber)}
+.btn-secondary{background:var(--aubergine);color:var(--white);border-color:var(--aubergine)}
+.btn-quiet{background:var(--white);color:var(--aubergine);border-color:var(--aubergine)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.field{margin:0 0 20px}
+label,legend{font-weight:750}
+label{display:block;margin-bottom:7px}
+input,select,textarea{width:100%;min-height:48px;border:2px solid var(--aubergine);border-radius:7px;background:var(--white);color:var(--ink);padding:10px 12px}
+textarea{min-height:120px;resize:vertical}
+[aria-invalid="true"]{border-color:var(--danger)}
+fieldset{border:0;padding:0;margin:0 0 20px}
+.choice-list{display:grid;gap:10px}
+.choice{display:flex;gap:10px;align-items:flex-start;padding:12px;border:2px solid var(--line);border-radius:9px;background:var(--white);min-height:48px}
+.choice input{width:22px;min-height:22px;margin:2px 0 0}
+.required{font-weight:800}
+.required::after{content:" *";color:var(--danger)}
+.help{color:var(--muted);font-size:.95rem}
+.notice{border-left:5px solid var(--aubergine);background:var(--ivory);padding:16px 18px;margin:18px 0}
+.error{color:var(--danger);font-weight:750}
+.field-error{color:var(--danger);font-weight:750;margin:6px 0 0}
+.field-error:empty{display:none}
+.status[hidden]{display:none}
+.progress{margin-bottom:24px}
+.progress-meta{display:flex;justify-content:space-between;gap:16px;font-weight:800}
+.progress-track{height:9px;background:var(--track);border-radius:99px;overflow:hidden;margin-top:8px}
+.progress-bar{height:100%;background:var(--aubergine);width:16.666%}
+.step[hidden]{display:none!important}
+.step-shell{padding:42px 0 72px}
+.step-head{max-width:760px;margin-bottom:30px}
+.route-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.route-card{border-radius:18px;padding:34px;min-height:310px;display:flex;flex-direction:column}
+.route-card.owner{background:var(--amber);color:var(--aubergine)}
+.route-card.reporter{background:var(--aubergine);color:var(--white)}
+.route-card .route-icon{width:56px;height:56px;border:3px solid currentColor;border-radius:12px;display:grid;place-items:center;margin-bottom:28px}
+.route-card .route-icon svg{display:block;width:30px;height:30px}
+.route-card .btn{margin-top:auto;align-self:flex-start}
+.route-card.owner .btn{background:var(--aubergine);color:var(--white);border-color:var(--aubergine)}
+.route-card.reporter .btn{background:var(--amber);color:var(--aubergine);border-color:var(--amber)}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.option-card{border:2px solid var(--line);border-radius:12px;padding:20px;background:var(--white)}
+.option-card button{width:100%}
+.address-result{display:block;width:100%;text-align:left;background:var(--white);border:2px solid var(--line);padding:14px;border-radius:8px;margin:8px 0;min-height:48px}
+.address-result:hover{border-color:var(--aubergine)}
+.selected-box{border:3px solid var(--aubergine);border-radius:10px;padding:18px;background:var(--ivory)}
+.hero{display:grid;grid-template-columns:minmax(0,45%) minmax(0,55%);min-height:calc(100vh - 82px);background:var(--aubergine)}
+.hero-copy{color:var(--white);padding:clamp(54px,8vw,110px) clamp(28px,7vw,90px);display:flex;flex-direction:column;justify-content:center}
+.hero-copy h1 .accent{display:block;color:var(--amber)}
+.hero-scene{position:relative;min-height:560px;overflow:hidden}
+.hero-photo{position:absolute;inset:0;background-image:url("assets/uk-terraced-empty-home-hero.jpg");background-image:image-set(url("assets/uk-terraced-empty-home-hero.webp") type("image/webp"),url("assets/uk-terraced-empty-home-hero.jpg") type("image/jpeg"));background-position:center;background-size:cover;background-repeat:no-repeat}
+.quote{position:absolute;left:8%;right:8%;bottom:7%;background:var(--white);color:var(--aubergine);border-left:7px solid var(--amber);padding:18px 22px;box-shadow:var(--shadow);max-width:430px}
+.trust{margin-top:24px}
+.trust strong{color:var(--amber)}
+.legal{padding:54px 0 80px}
+.legal article,.legal .card{background:var(--white);padding:clamp(24px,5vw,52px);border-radius:var(--radius);box-shadow:var(--shadow)}
+.legal h2{margin-top:34px;font-size:1.55rem}
+.simple-page{padding:58px 0 80px}
+.simple-page .panel{max-width:840px;margin:0 auto}
+footer{background:var(--aubergine);color:var(--white);padding:26px 0}
+footer a{color:var(--white)}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px}
+.honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:800px){
+  .site-header{height:74px;padding:0 14px}
+  .brand img{height:46px}
+  .header-action{font-size:.75rem;padding:8px 10px}
+  .hero{display:block;min-height:auto}
+  .hero-copy{padding:48px 22px}
+  .hero-scene{min-height:390px;overflow:visible}
+  .quote{position:relative;left:auto;right:auto;bottom:auto;max-width:none;margin:-40px 16px 0}
+  .route-card-grid,.card-grid{grid-template-columns:1fr}
+  .step-shell{padding:28px 0 56px}
+}
+@media(max-width:420px){
+  .brand img{height:38px}
+  .header-action{font-size:.68rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><a class="brand" href="/" aria-label="ReportAnEmptyHome.co.uk home"><img src="assets/raeh-approved-wordmark.png" alt="Report an Empty Home .co.uk" width="380" height="170"></a></header>
+<main id="main">
+<section class="hero" id="landing" aria-labelledby="landing-title">
+  <div class="hero-copy">
+    <p class="eyebrow">A home can come back to life</p>
+    <h1 id="landing-title"><span>Every empty home has a story.</span><span class="accent">Let&#8217;s bring them back to life.</span></h1>
+    <p class="lead">Report an Empty Home.co.uk connects owners, communities and trusted partners to understand empty homes and explore the best way forward.</p>
+    <div class="actions"><button class="btn btn-primary" type="button" data-start>REPORT AN EMPTY HOME</button></div>
+    <p class="trust"><strong>Safe. Secure. Confidential.</strong><br>We respect your privacy and protect your information.</p>
+  </div>
+  <div class="hero-scene">
+    <div class="hero-photo" role="img" aria-label="A UK terraced row with one empty and unkempt home between two well-kept homes"></div>
+    <blockquote class="quote">An empty home doesn&#8217;t just affect an owner - it affects the whole community. Together, we can change that.</blockquote>
+  </div>
+</section>
+
+<section id="journey" hidden>
+<div class="wrap step-shell">
+  <div class="progress" aria-label="Reporting progress">
+    <div class="progress-meta"><span id="progress-step" aria-current="step">Step 1 of 6</span><span id="progress-label">About you</span></div>
+    <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+  </div>
+
+  <section class="step" data-step="1" aria-labelledby="step1-title">
+    <div class="panel">
+      <div class="step-head"><h2 id="step1-title" tabindex="-1">Let&#8217;s get started</h2><p class="lead">Which best describes you?</p></div>
+      <div class="route-card-grid">
+        <article class="route-card owner">
+          <div class="route-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5.5 9.5V21h13V9.5"></path><path d="M10 21v-6h4v6"></path></svg></div>
+          <h3>I own an empty property</h3>
+          <p>Tell us about your property.</p>
+          <button class="btn" type="button" data-role="OWNER">YES</button>
+        </article>
+        <article class="route-card reporter">
+          <div class="route-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"></path><path d="M5.5 9.5V21h13V9.5"></path><path d="M10 21v-6h4v6"></path></svg></div>
+          <h3>I know of an empty property</h3>
+          <p>Report an empty property.</p>
+          <button class="btn" type="button" data-role="REPORTER">YES</button>
+        </article>
+      </div>
+      <p class="notice"><strong>Safe. Secure. Confidential.</strong><br>We respect your privacy and protect your information.</p>
+    </div>
+  </section>
+
+  <section class="step" data-step="2" hidden aria-labelledby="step2-title">
+    <div class="panel">
+      <div class="step-head"><h2 id="step2-title" tabindex="-1">Which property is this about?</h2><p>Search by postcode or address. If you cannot find it, you can enter the address manually.</p></div>
+      <div id="address-search-state">
+        <div class="field"><label class="required" for="address-search">Postcode or address</label><input id="address-search" autocomplete="postal-code" aria-describedby="address-search-help address-search-error"><p class="help" id="address-search-help">Start typing an address or postcode.</p><p class="field-error" id="address-search-error"></p></div>
+        <div class="actions"><button class="btn btn-primary" id="find-address" type="button">FIND ADDRESS</button><button class="btn btn-quiet" id="manual-address" type="button">CAN&#8217;T FIND ADDRESS?</button></div>
+      </div>
+      <div id="address-results" hidden>
+        <h3 tabindex="-1">Choose the property</h3>
+        <button class="address-result" type="button" data-address="12 Example Street, Loughborough, LE11 1AA" data-town="Loughborough" data-postcode="LE11 1AA">12 Example Street, Loughborough, LE11 1AA</button>
+        <button class="address-result" type="button" data-address="14 Example Street, Loughborough, LE11 1AA" data-town="Loughborough" data-postcode="LE11 1AA">14 Example Street, Loughborough, LE11 1AA</button>
+        <button class="address-result" type="button" data-address="16 Example Street, Loughborough, LE11 1AA" data-town="Loughborough" data-postcode="LE11 1AA">16 Example Street, Loughborough, LE11 1AA</button>
+      </div>
+      <div id="selected-address" hidden><h3 tabindex="-1">Is this the right property?</h3><div class="selected-box" id="selected-address-text"></div><div class="actions"><button class="btn btn-primary" type="button" id="confirm-address">YES</button><button class="btn btn-quiet" type="button" id="change-address">NO</button></div></div>
+      <div id="manual-fields" hidden>
+        <h3 tabindex="-1">Enter the address</h3>
+        <div class="field"><label for="is-flat">Flat or apartment?</label><select id="is-flat"><option value="no">No</option><option value="yes">Yes</option></select></div>
+        <div class="field" id="flat-field" hidden><label class="required" for="flat">Flat / apartment number or name</label><input id="flat"></div>
+        <div class="field"><label for="building-name">Building name</label><input id="building-name"></div>
+        <div class="field"><label for="building-number">Building number</label><input id="building-number"></div>
+        <div class="field"><label class="required" for="street">Street</label><input id="street" autocomplete="address-line1" aria-describedby="street-error"><p class="field-error" id="street-error"></p></div>
+        <div class="field"><label for="locality">Locality</label><input id="locality"></div>
+        <div class="field"><label class="required" for="town">Town / city</label><input id="town" autocomplete="address-level2" aria-describedby="town-error"><p class="field-error" id="town-error"></p></div>
+        <div class="field"><label class="required" for="postcode">Postcode</label><input id="postcode" autocomplete="postal-code" aria-describedby="postcode-error"><p class="field-error" id="postcode-error"></p></div>
+        <div class="actions"><button class="btn btn-primary" type="button" id="save-manual">CONTINUE</button></div>
+      </div>
+      <div id="reporter-reward" hidden>
+        <h3 tabindex="-1">Your report could earn you a reward.</h3>
+        <p>If we go on to purchase the property you've reported, you could receive 1% of the purchase price, up to &#163;10,000, subject to our <a href="reporter-terms.html">Reward Terms</a>.</p>
+        <div class="actions"><button class="btn btn-primary" type="button" data-next="3">CONTINUE</button></div>
+      </div>
+      <div id="duplicate-state" hidden>
+        <h3 tabindex="-1">We already know about this property</h3>
+        <p>You can still continue if you have useful information to add. This does not mean you have first-reporter reward priority.</p>
+        <div class="actions"><button class="btn btn-primary" type="button" data-next="3">CONTINUE</button></div>
+      </div>
+      <div class="actions"><button class="btn btn-quiet" type="button" data-back>BACK</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="3" hidden aria-labelledby="step3-title">
+    <div class="panel">
+      <div class="step-head"><h2 id="step3-title" tabindex="-1">Tell us a little about the property</h2><p>Only the information we genuinely need at this stage.</p></div>
+      <div id="owner-context" hidden>
+        <fieldset><legend class="required">How long has the property been empty?</legend><div class="choice-list" id="owner-duration"></div><p class="field-error" id="owner-duration-error"></p></fieldset>
+        <fieldset><legend>Would you like to tell us why the property is currently empty?</legend><div class="actions"><button class="btn btn-secondary" type="button" id="reason-yes">YES</button><button class="btn btn-quiet" type="button" id="reason-no">NO</button></div></fieldset>
+        <div id="reason-categories" hidden>
+          <fieldset><legend>Choose any that apply</legend><div class="choice-list">
+            <label class="choice"><input type="checkbox" name="reason" value="personal-family">Personal or family circumstances</label>
+            <label class="choice"><input type="checkbox" name="reason" value="needs-work">Property needs work</label>
+            <label class="choice"><input type="checkbox" name="reason" value="selling-letting">Selling or letting has been difficult</label>
+            <label class="choice"><input type="checkbox" name="reason" value="legal-admin">Legal or administrative matters</label>
+            <label class="choice"><input type="checkbox" name="reason" value="something-else" id="owner-something">Something else</label>
+            <label class="choice"><input type="checkbox" name="reason" value="prefer-not">Prefer not to say</label>
+          </div></fieldset>
+          <div class="field" id="owner-something-detail" hidden><label for="owner-reason-detail">Something else</label><textarea id="owner-reason-detail"></textarea></div>
+        </div>
+        <div class="field"><label for="owner-anything">Anything else you&#8217;d like us to know?</label><textarea id="owner-anything"></textarea></div>
+      </div>
+      <div id="reporter-context" hidden>
+        <fieldset><legend class="required">How long do you think the property has been empty?</legend><div class="choice-list" id="reporter-duration"></div><p class="field-error" id="reporter-duration-error"></p></fieldset>
+        <fieldset><legend class="required">What makes you think the property is empty?</legend><div class="choice-list">
+          <label class="choice"><input type="checkbox" name="sign" value="unoccupied">Property appears unoccupied</label>
+          <label class="choice"><input type="checkbox" name="sign" value="neglected">Property looks neglected or overgrown</label>
+          <label class="choice"><input type="checkbox" name="sign" value="post">Post or deliveries appear to be accumulating</label>
+          <label class="choice"><input type="checkbox" name="sign" value="boarded">Windows or doors appear boarded up or damaged</label>
+          <label class="choice"><input type="checkbox" name="sign" value="known">I have known the property to be empty for some time</label>
+          <label class="choice"><input type="checkbox" name="sign" value="something-else" id="reporter-something">Something else</label>
+        </div><p class="field-error" id="sign-error"></p></fieldset>
+        <div class="field" id="reporter-something-detail" hidden><label for="reporter-sign-detail">Something else</label><textarea id="reporter-sign-detail"></textarea></div>
+        <div class="field"><label for="reporter-anything">Anything else you&#8217;d like us to know?</label><textarea id="reporter-anything"></textarea></div>
+        <p class="notice"><strong>Please keep yourself safe.</strong> Only tell us what you already know or have observed. Please do not enter the property or private land, look through windows or do anything to investigate it.</p>
+      </div>
+      <div class="actions"><button class="btn btn-quiet" type="button" data-back>BACK</button><button class="btn btn-primary" type="button" data-next="4">CONTINUE</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="4" hidden aria-labelledby="step4-title">
+    <div class="panel">
+      <div class="step-head"><h2 id="step4-title" tabindex="-1">Do you have any photos you&#8217;d like to add?</h2><p>Photos can help us understand the property. You don&#8217;t need to add any to continue.</p></div>
+      <div class="field"><label for="photos">Add up to 5 photographs</label><input id="photos" type="file" accept=".jpg,.jpeg,.png,.heic,.heif,.webp,image/jpeg,image/png,image/heic,image/heif,image/webp" multiple aria-describedby="photo-help photo-error"><p class="help" id="photo-help">JPG, JPEG, PNG, HEIC, HEIF or WebP. Maximum 10 MB each.</p></div>
+      <ul id="photo-list"></ul>
+      <p class="notice" id="photo-safety" hidden><strong>Please keep yourself safe.</strong> Only upload photos you already have. Do not enter the property or private land, look through windows or investigate the property to obtain photographs.</p>
+      <p class="field-error" id="photo-error" role="alert"></p>
+      <div class="actions"><button class="btn btn-quiet" type="button" data-back>BACK</button><button class="btn btn-primary" type="button" data-next="5">CONTINUE</button></div>
+    </div>
+  </section>
+
+  <section class="step" data-step="5" hidden aria-labelledby="step5-title">
+    <div class="panel">
+      <div class="step-head"><h2 id="step5-title" tabindex="-1">Your contact details</h2></div>
+      <form id="contact-form" novalidate>
+        <div class="field"><label class="required" for="full-name">Full name</label><input id="full-name" name="full_name" autocomplete="name" aria-describedby="full-name-error"><p class="field-error" id="full-name-error"></p></div>
+        <div class="field"><label class="required" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error"><p class="field-error" id="email-error"></p></div>
+        <div class="field" id="phone-field"><label id="phone-label" for="phone">Telephone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-error"><p class="field-error" id="phone-error"></p></div>
+        <p id="contact-support"></p>
+        <p id="reward-note" class="notice" hidden>If your report qualifies for a reward, we&#8217;ll contact you before payment to confirm your identity and collect the information we need to pay you.</p>
+        <div class="field"><label class="choice"><input type="checkbox" id="privacy-accepted" aria-describedby="privacy-error"> I have read the <a href="privacy.html" target="_blank" rel="noopener">Privacy Notice</a>.</label><p class="field-error" id="privacy-error"></p></div>
+        <div class="field" id="declaration-field" hidden><label class="choice"><input type="checkbox" id="declaration-accepted" aria-describedby="declaration-error"> I confirm I have only provided information I already know or have lawfully observed and have not entered private property to investigate.</label><p class="field-error" id="declaration-error"></p></div>
+        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+        <p id="submit-error" class="error" role="alert"></p>
+        <div class="actions"><button class="btn btn-quiet" type="button" data-back>BACK</button><button class="btn btn-primary" type="submit">SUBMIT</button></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="step" data-step="6" hidden aria-labelledby="step6-title">
+    <div class="panel" id="owner-confirmation" hidden>
+      <h2 id="owner-confirm-title" tabindex="-1">Thank you. We&#8217;ve received your property details.</h2>
+      <p class="lead"><strong>You can expect to hear from us within 48 hours.</strong></p>
+      <p>We&#8217;ll review the information you&#8217;ve provided and contact you to discuss the property and what happens next.</p>
+      <div class="notice"><strong>While you wait:</strong> The Hidden Cost of Leaving a Property Empty is available to help you understand some of the costs that can build up while a home remains unused.</div>
+      <div class="actions"><a class="btn btn-primary" href="owners.html">VIEW OWNER INFORMATION</a></div>
+    </div>
+    <div id="reporter-postsubmit" hidden>
+      <section id="reporter-know-owner" class="panel">
+        <h2 id="step6-title" tabindex="-1">Do you know the owner of this property?</h2>
+        <div class="actions"><button class="btn btn-secondary" type="button" data-knows-owner="yes">YES</button><button class="btn btn-quiet" type="button" data-knows-owner="no">NO</button></div>
+      </section>
+      <section id="reporter-willing" class="panel" hidden>
+        <h2 tabindex="-1">Would you be happy to let them know about us?</h2>
+        <p>You can invite them to tell us about their property directly.</p>
+        <div class="actions"><button class="btn btn-secondary" type="button" data-willing="yes">YES</button><button class="btn btn-quiet" type="button" data-willing="no">NO</button></div>
+      </section>
+      <section id="share-options" class="panel" hidden>
+        <h2 tabindex="-1">Choose how you&#8217;d like to share</h2>
+        <div class="card-grid">
+          <div class="option-card"><h3>Share with owner</h3><p>Use your device&#8217;s share options.</p><button class="btn btn-secondary" type="button" id="native-share">SHARE</button></div>
+          <div class="option-card"><h3>Copy message</h3><p>Copy a short message and owner link.</p><button class="btn btn-secondary" type="button" id="copy-message">COPY MESSAGE</button></div>
+          <div class="option-card"><h3>Print a letter</h3><p>Preview a letter you can print and pass to the owner.</p><button class="btn btn-secondary" type="button" id="show-letter">PRINT A LETTER</button></div>
+        </div>
+        <p id="share-status" role="status"></p>
+      </section>
+      <section id="known-owner-letter" class="panel" hidden>
+        <h2 tabindex="-1">Owner introduction letter</h2>
+        <article>
+          <p><strong>An empty property can quietly cost you more than you realise.</strong></p>
+          <p>Council tax, insurance and ongoing upkeep can continue month after month, while an unused property can become more difficult and expensive to manage over time.</p>
+          <p>What you may not know is whether keeping it empty is costing you more than it needs to, or what other possibilities you could be missing.</p>
+          <p>Before you decide what happens next, it may be worth understanding what your property could be costing you now and what options you may not yet have considered.</p>
+          <p>You do not need to know what you want to do with the property. You do not need to have made any decisions.</p>
+          <p>It starts with understanding what is possible.</p>
+          <p>We can help you clarify your situation and understand and compare the options available to you, so you can decide what makes the most sense for your property and your circumstances.</p>
+          <p><strong>The property may be standing still. Your options don&#8217;t have to be.</strong></p>
+          <p>Warm regards,<br>Hanna<br>ReportAnEmptyHome.co.uk</p>
+          <p><strong>FIND OUT WHAT YOUR OPTIONS ARE</strong></p>
+          <p>Visit: <span data-owner-url>ReportAnEmptyHome.co.uk/o/EXAMPLE</span></p>
+          <p><strong>Clarify. Compare. Choose.</strong></p>
+        </article>
+        <div class="actions"><button class="btn btn-primary" type="button" data-print>PRINT LETTER</button><button class="btn btn-quiet" type="button" data-final>DONE</button></div>
+      </section>
+      <section id="unknown-owner-offer" class="panel" hidden>
+        <h2 tabindex="-1">Would you be happy to leave a helpful letter for the owner?</h2>
+        <p>It&#8217;s a simple way to let the owner know where they can find useful information and support. The letter explains how they can explore their options, with no obligation. Please choose the option that&#8217;s right for you.</p>
+        <div class="actions"><button class="btn btn-secondary" type="button" data-letter-offer="yes">I&#8217;M HAPPY TO LEAVE THE LETTER</button><button class="btn btn-quiet" type="button" data-letter-offer="no">I&#8217;D RATHER NOT LEAVE A LETTER</button></div>
+      </section>
+      <section id="generic-letter" class="panel" hidden>
+        <h2 tabindex="-1">You may find this useful</h2>
+        <p>If you are the owner of this property, ReportAnEmptyHome.co.uk may be able to help you understand your options and consider what you might want to do next.</p>
+        <p>There is no obligation to take any action.</p>
+        <p>If you would simply like to find out more, you can tell us about your property here:</p>
+        <p><strong data-owner-url>ReportAnEmptyHome.co.uk/o/EXAMPLE</strong></p>
+        <div class="actions"><button class="btn btn-primary" type="button" data-print>PRINT LETTER</button><button class="btn btn-quiet" type="button" data-final>DONE</button></div>
+      </section>
+      <section id="reporter-final" class="panel" hidden>
+        <h2 tabindex="-1">Thank you. Your report is complete.</h2>
+        <p>We&#8217;ll review the information you&#8217;ve provided and contact you if we need anything else.</p>
+      </section>
+    </div>
+  </section>
+</div>
+</section>
+</main>
+<script>
+(() => {
+  "use strict";
+
+  /* ACT-738 SEC-2 — endpoints are named constants, blank by default.
+     Injected at deploy time via Netlify environment configuration. */
+  const REPORT_ENDPOINT = "";
+  const LOOKUP_ENDPOINT = "";
+
+  const $  = s => document.querySelector(s);
+  const $$ = s => [...document.querySelectorAll(s)];
+
+  const LABELS = ["About you","Property address","Property context","Photos","Contact details","Confirmation"];
+  const DURATIONS = ["Less than 3 months","3–6 months","6–12 months","1–2 years","2–5 years","More than 5 years","I’m not sure"];
+  const ALLOWED_TYPES = ["image/jpeg","image/png","image/heic","image/heif","image/webp"];
+  const ALLOWED_EXTS  = ["jpg","jpeg","png","heic","heif","webp"];
+  const MAX_FILES = 5;
+  const MAX_BYTES = 10 * 1024 * 1024;
+
+  let state;
+  try { state = JSON.parse(sessionStorage.getItem("raeh_state") || "{}"); }
+  catch (e) { state = {}; }
+  if (!state || typeof state !== "object") state = {};
+  state.step = Number(state.step || 0);
+  state.address = state.address || {};
+  state.contact = state.contact || {};
+  state.reason = state.reason || [];
+  state.sign = state.sign || [];
+  state.files = state.files || [];
+
+  const save = () => { try { sessionStorage.setItem("raeh_state", JSON.stringify(state)); } catch (e) {} };
+
+  /* ---------------------------------------------------------------- A11Y-9 */
+  function setError(field, errorEl, message) {
+    if (!field || !errorEl) return;
+    field.setAttribute("aria-invalid", "true");
+    errorEl.textContent = message;
+  }
+  function clearError(field, errorEl) {
+    if (field) field.removeAttribute("aria-invalid");
+    if (errorEl) errorEl.textContent = "";
+  }
+  function clearAllErrors(root) {
+    (root || document).querySelectorAll(".field-error").forEach(p => { p.textContent = ""; });
+    (root || document).querySelectorAll("[aria-invalid]").forEach(el => el.removeAttribute("aria-invalid"));
+  }
+  function bindClear(field, errorEl, test) {
+    if (!field) return;
+    const evt = (field.type === "checkbox" || field.tagName === "SELECT") ? "change" : "input";
+    field.addEventListener(evt, () => { if (!test || test()) clearError(field, errorEl); });
+  }
+
+  function focusEl(el) {
+    if (!el) return;
+    requestAnimationFrame(() => { try { el.focus({ preventScroll: true }); } catch (e) { el.focus(); } });
+  }
+
+  /* ------------------------------------------------------- step rendering */
+  /* ACT-738 UX-3 — every step rebuilds itself from state, so BACK, FORWARD
+     and a mid-journey refresh all restore what the person entered. */
+
+  function renderStep2() {
+    const stage = state.address.stage || "search";
+    const showSearch   = stage === "search"  || stage === "results";
+    const showResults  = stage === "results";
+    const showSelected = stage === "selected" || stage === "reward" || stage === "duplicate";
+    const showManual   = stage === "manual";
+
+    $("#address-search-state").hidden = !showSearch;
+    $("#address-results").hidden      = !showResults;
+    $("#selected-address").hidden     = !showSelected;
+    $("#manual-fields").hidden        = !showManual;
+    $("#reporter-reward").hidden      = stage !== "reward";
+    $("#duplicate-state").hidden      = stage !== "duplicate";
+
+    $("#address-search").value    = state.address.query || "";
+    $("#flat").value              = state.address.flat || "";
+    $("#building-name").value     = state.address.building_name || "";
+    $("#building-number").value   = state.address.building_number || "";
+    $("#street").value            = state.address.street || "";
+    $("#locality").value          = state.address.locality || "";
+    $("#town").value              = state.address.town || "";
+    $("#postcode").value          = state.address.postcode || "";
+    $("#is-flat").value           = state.address.is_flat || "no";
+    $("#flat-field").hidden       = ($("#is-flat").value !== "yes");
+    $("#selected-address-text").textContent = state.address.display || "";
+  }
+
+  function fillDurations(id, key) {
+    $(id).innerHTML = DURATIONS.map(d =>
+      '<label class="choice"><input type="radio" name="' + key + '" value="' + d + '"' +
+      (state[key] === d ? " checked" : "") + "> " + d + "</label>").join("");
+  }
+
+  function renderStep3() {
+    const owner = state.user_type === "OWNER";
+    $("#owner-context").hidden = !owner;
+    $("#reporter-context").hidden = owner;
+    fillDurations("#owner-duration", "owner_duration");
+    fillDurations("#reporter-duration", "reporter_duration");
+
+    $("#reason-categories").hidden = !state.reason_shown;
+    $$('input[name="reason"]').forEach(c => { c.checked = state.reason.indexOf(c.value) > -1; });
+    $$('input[name="sign"]').forEach(c => { c.checked = state.sign.indexOf(c.value) > -1; });
+    $("#owner-something-detail").hidden = !$("#owner-something").checked;
+    $("#reporter-something-detail").hidden = !$("#reporter-something").checked;
+
+    $("#owner-reason-detail").value   = state.owner_reason_detail || "";
+    $("#owner-anything").value        = state.owner_anything || "";
+    $("#reporter-sign-detail").value  = state.reporter_sign_detail || "";
+    $("#reporter-anything").value     = state.reporter_anything || "";
+  }
+
+  function renderStep4() {
+    $("#photo-safety").hidden = state.user_type !== "REPORTER";
+    $("#photo-list").innerHTML = state.files.map(f => "<li>" + f.name + "</li>").join("");
+  }
+
+  function renderStep5() {
+    const owner = state.user_type === "OWNER";
+    $("#phone-label").className = owner ? "required" : "";
+    $("#contact-support").textContent = owner
+      ? "We’ll use these details to contact you about this property and your enquiry."
+      : "Your email is required for contact and any later reward administration. Telephone is optional.";
+    $("#reward-note").hidden = owner;
+    $("#declaration-field").hidden = owner;
+
+    $("#full-name").value = state.contact.full_name || "";
+    $("#email").value     = state.contact.email || "";
+    $("#phone").value     = state.contact.phone || "";
+    $("#privacy-accepted").checked     = !!state.privacy_accepted;
+    $("#declaration-accepted").checked = !!state.declaration_accepted;
+  }
+
+  function renderStep6() {
+    /* Only reachable with an accepted submission (see restore()). */
+    if (state.user_type === "OWNER") {
+      $("#owner-confirmation").hidden = false;
+      $("#reporter-postsubmit").hidden = true;
+      focusEl($("#owner-confirm-title"));
+    } else {
+      $("#owner-confirmation").hidden = true;
+      $("#reporter-postsubmit").hidden = false;
+      ["#reporter-willing","#share-options","#known-owner-letter","#unknown-owner-offer","#generic-letter","#reporter-final"]
+        .forEach(s => { $(s).hidden = true; });
+      $("#reporter-know-owner").hidden = false;
+      focusEl($("#step6-title"));
+    }
+  }
+
+  function showStep(n, push) {
+    if (push === undefined) push = true;
+    $("#landing").hidden = true;
+    $("#journey").hidden = false;
+    $$(".step").forEach(x => { x.hidden = Number(x.dataset.step) !== n; });
+    state.step = n;
+    save();
+
+    $("#progress-step").textContent = "Step " + n + " of 6";
+    $("#progress-label").textContent = LABELS[n - 1] || "";
+    $("#progress-bar").style.width = ((n / 6) * 100) + "%";
+
+    if (n === 2) renderStep2();
+    if (n === 3) renderStep3();
+    if (n === 4) renderStep4();
+    if (n === 5) renderStep5();
+
+    if (push) history.pushState({ step: n }, "", "#step-" + n);
+
+    if (n === 6) { renderStep6(); return; }
+    const current = $('.step[data-step="' + n + '"]');
+    focusEl(current ? current.querySelector('h2[tabindex="-1"]') : null);
+  }
+
+  function showLanding() {
+    $("#journey").hidden = true;
+    $("#landing").hidden = false;
+    state.step = 0;
+    save();
+  }
+
+  /* ------------------------------------------------------------ navigation */
+  $$("[data-start]").forEach(b => b.addEventListener("click", () => showStep(1)));
+
+  $$("[data-role]").forEach(b => b.addEventListener("click", () => {
+    state.user_type = b.dataset.role;
+    save();
+    showStep(2);
+  }));
+
+  $$("[data-next]").forEach(b => b.addEventListener("click", () => {
+    const target = Number(b.dataset.next);
+    if (target === 4 && !validateStep3()) return;
+    showStep(target);
+  }));
+
+  $$("[data-back]").forEach(b => b.addEventListener("click", () => history.back()));
+
+  /* ACT-738 UX-2/UX-5 — the same guards apply however a step is arrived at:
+     browser back or forward, a pasted link, or an in-page hash change. */
+  function resolveStep(n) {
+    if (n < 1 || n > 6) return 0;
+    if (n >= 2 && !state.user_type) return 1;
+    if (n === 6 && !state.submission) return 5;
+    return n;
+  }
+
+  function goToStep(n) {
+    const target = resolveStep(n);
+    if (!target) { showLanding(); return; }
+    if (target !== n) history.replaceState({ step: target }, "", "#step-" + target);
+    showStep(target, false);
+  }
+
+  window.addEventListener("popstate", e => {
+    const n = (e.state && e.state.step) || Number(String(location.hash).replace("#step-", "")) || 0;
+    goToStep(n);
+  });
+
+  window.addEventListener("hashchange", () => {
+    const n = Number(String(location.hash).replace("#step-", "")) || 0;
+    if (n && n !== state.step) goToStep(n);
+  });
+
+  /* ------------------------------------------------------- step 2: address */
+  bindClear($("#address-search"), $("#address-search-error"), () => $("#address-search").value.trim());
+  bindClear($("#street"),   $("#street-error"),   () => $("#street").value.trim());
+  bindClear($("#town"),     $("#town-error"),     () => $("#town").value.trim());
+  bindClear($("#postcode"), $("#postcode-error"), () => $("#postcode").value.trim());
+
+  $("#address-search").addEventListener("input", () => {
+    state.address.query = $("#address-search").value;
+    save();
+  });
+
+  $("#find-address").addEventListener("click", () => {
+    const q = $("#address-search").value.trim();
+    if (!q) {
+      setError($("#address-search"), $("#address-search-error"), "Enter a postcode or address to search for.");
+      focusEl($("#address-search"));
+      return;
+    }
+    clearError($("#address-search"), $("#address-search-error"));
+    state.address.query = q;
+    state.address.stage = "results";
+    save();
+    renderStep2();
+    focusEl($("#address-results h3"));
+  });
+
+  $$(".address-result").forEach(b => b.addEventListener("click", () => {
+    state.address.display  = b.dataset.address;
+    state.address.town     = b.dataset.town || "";
+    state.address.postcode = b.dataset.postcode || "";
+    state.address.manual   = false;
+    state.address.stage    = "selected";
+    save();
+    renderStep2();
+    focusEl($("#selected-address h3"));
+  }));
+
+  $("#change-address").addEventListener("click", () => {
+    state.address.stage = "results";
+    save();
+    renderStep2();
+    focusEl($("#address-results h3"));
+  });
+
+  $("#manual-address").addEventListener("click", () => {
+    state.address.stage = "manual";
+    save();
+    renderStep2();
+    focusEl($("#manual-fields h3"));
+  });
+
+  $("#is-flat").addEventListener("change", e => {
+    state.address.is_flat = e.target.value;
+    $("#flat-field").hidden = e.target.value !== "yes";
+    save();
+  });
+
+  ["flat","building-name","building-number","street","locality","town","postcode"].forEach(id => {
+    $("#" + id).addEventListener("input", e => {
+      state.address[id.replace(/-/g, "_")] = e.target.value;
+      save();
+    });
+  });
+
+  $("#save-manual").addEventListener("click", () => {
+    clearError($("#street"),   $("#street-error"));
+    clearError($("#town"),     $("#town-error"));
+    clearError($("#postcode"), $("#postcode-error"));
+    const street = $("#street").value.trim();
+    const town = $("#town").value.trim();
+    const postcode = $("#postcode").value.trim();
+    let first = null;
+    if (!postcode) { setError($("#postcode"), $("#postcode-error"), "Enter the property postcode."); first = $("#postcode"); }
+    if (!town)     { setError($("#town"),     $("#town-error"),     "Enter the town or city.");       first = $("#town"); }
+    if (!street)   { setError($("#street"),   $("#street-error"),   "Enter the street.");             first = $("#street"); }
+    if (first) { focusEl(first); return; }
+
+    state.address.manual   = true;
+    state.address.street   = street;
+    state.address.town     = town;
+    state.address.postcode = postcode;
+    state.address.display  = [
+      $("#flat").value, $("#building-name").value, $("#building-number").value,
+      street, $("#locality").value, town, postcode
+    ].filter(Boolean).join(", ");
+    state.address.stage = "selected";
+    save();
+    renderStep2();
+    afterAddress();
+  });
+
+  $("#confirm-address").addEventListener("click", () => afterAddress());
+
+  function afterAddress() {
+    if (state.user_type === "REPORTER") {
+      state.address.stage = "reward";
+      save();
+      renderStep2();
+      focusEl($("#reporter-reward h3"));
+    } else {
+      showStep(3);
+    }
+  }
+
+  /* ------------------------------------------------------- step 3: context */
+  $("#reason-yes").addEventListener("click", () => { state.reason_shown = true;  save(); renderStep3(); });
+  $("#reason-no").addEventListener("click",  () => { state.reason_shown = false; save(); renderStep3(); });
+
+  document.addEventListener("change", e => {
+    const t = e.target;
+    if (t.name === "owner_duration" || t.name === "reporter_duration") {
+      state[t.name] = t.value;
+      clearError(null, $("#" + (t.name === "owner_duration" ? "owner" : "reporter") + "-duration-error"));
+      save();
+    }
+    if (t.name === "reason") {
+      state.reason = $$('input[name="reason"]:checked').map(c => c.value);
+      $("#owner-something-detail").hidden = !$("#owner-something").checked;
+      save();
+    }
+    if (t.name === "sign") {
+      state.sign = $$('input[name="sign"]:checked').map(c => c.value);
+      $("#reporter-something-detail").hidden = !$("#reporter-something").checked;
+      if (state.sign.length) $("#sign-error").textContent = "";
+      save();
+    }
+  });
+
+  [["owner-reason-detail","owner_reason_detail"],["owner-anything","owner_anything"],
+   ["reporter-sign-detail","reporter_sign_detail"],["reporter-anything","reporter_anything"]]
+   .forEach(pair => {
+     $("#" + pair[0]).addEventListener("input", e => { state[pair[1]] = e.target.value; save(); });
+   });
+
+  function validateStep3() {
+    const owner = state.user_type === "OWNER";
+    $("#owner-duration-error").textContent = "";
+    $("#reporter-duration-error").textContent = "";
+    $("#sign-error").textContent = "";
+    if (owner) {
+      if (!state.owner_duration) {
+        $("#owner-duration-error").textContent = "Choose how long the property has been empty.";
+        focusEl($('#owner-duration input'));
+        return false;
+      }
+      return true;
+    }
+    if (!state.reporter_duration) {
+      $("#reporter-duration-error").textContent = "Choose how long you think the property has been empty.";
+      focusEl($('#reporter-duration input'));
+      return false;
+    }
+    if (!state.sign.length) {
+      $("#sign-error").textContent = "Choose at least one thing that makes you think the property is empty.";
+      focusEl($('input[name="sign"]'));
+      return false;
+    }
+    return true;
+  }
+
+  /* --------------------------------------------------------- step 4: files */
+  /* ACT-738 — image formats only. PDFs and all document formats are rejected.
+     Some browsers report an empty MIME type for HEIC/HEIF, so the file
+     extension is accepted as a fallback. */
+  function fileAllowed(f) {
+    const ext = (f.name.split(".").pop() || "").toLowerCase();
+    const typeOk = f.type ? ALLOWED_TYPES.indexOf(f.type) > -1 : false;
+    const extOk = ALLOWED_EXTS.indexOf(ext) > -1;
+    return (typeOk || (!f.type && extOk)) && extOk;
+  }
+
+  $("#photos").addEventListener("change", e => {
+    const files = [...e.target.files];
+    $("#photo-error").textContent = "";
+    if (files.length > MAX_FILES) {
+      $("#photo-error").textContent = "Choose no more than " + MAX_FILES + " photographs.";
+      e.target.value = ""; return;
+    }
+    const badType = files.find(f => !fileAllowed(f));
+    if (badType) {
+      $("#photo-error").textContent = "“" + badType.name + "” is not a supported image. Photographs only — JPG, JPEG, PNG, HEIC, HEIF or WebP. PDFs and documents cannot be accepted.";
+      e.target.value = ""; return;
+    }
+    const tooBig = files.find(f => f.size > MAX_BYTES);
+    if (tooBig) {
+      $("#photo-error").textContent = "“" + tooBig.name + "” is larger than 10 MB. Each photograph must be 10 MB or smaller.";
+      e.target.value = ""; return;
+    }
+    state.files = files.map(f => ({ name: f.name, type: f.type, size: f.size }));
+    save();
+    renderStep4();
+  });
+
+  /* ------------------------------------------------------- step 5: contact */
+  bindClear($("#full-name"), $("#full-name-error"), () => $("#full-name").value.trim());
+  bindClear($("#email"),     $("#email-error"),     () => $("#email").value.trim());
+  bindClear($("#phone"),     $("#phone-error"),     () => $("#phone").value.trim());
+  bindClear($("#privacy-accepted"), $("#privacy-error"), () => $("#privacy-accepted").checked);
+  bindClear($("#declaration-accepted"), $("#declaration-error"), () => $("#declaration-accepted").checked);
+
+  ["full-name","email","phone"].forEach(id => {
+    $("#" + id).addEventListener("input", e => {
+      state.contact[id.replace(/-/g, "_")] = e.target.value;
+      save();
+    });
+  });
+  $("#privacy-accepted").addEventListener("change", e => { state.privacy_accepted = e.target.checked; save(); });
+  $("#declaration-accepted").addEventListener("change", e => { state.declaration_accepted = e.target.checked; save(); });
+
+  function validateContact() {
+    const owner = state.user_type === "OWNER";
+    clearAllErrors($("#contact-form"));
+    let first = null;
+    if (!owner && !$("#declaration-accepted").checked) {
+      setError($("#declaration-accepted"), $("#declaration-error"), "Please confirm the reporter declaration before submitting.");
+      first = $("#declaration-accepted");
+    }
+    if (!$("#privacy-accepted").checked) {
+      setError($("#privacy-accepted"), $("#privacy-error"), "Please confirm you have read the Privacy Notice.");
+      first = $("#privacy-accepted");
+    }
+    if (owner && !$("#phone").value.trim()) {
+      setError($("#phone"), $("#phone-error"), "Enter a telephone number we can reach you on.");
+      first = $("#phone");
+    }
+    const email = $("#email").value.trim();
+    if (!email || !$("#email").checkValidity()) {
+      setError($("#email"), $("#email-error"), "Enter an email address we can reply to.");
+      first = $("#email");
+    }
+    if (!$("#full-name").value.trim()) {
+      setError($("#full-name"), $("#full-name-error"), "Enter your full name.");
+      first = $("#full-name");
+    }
+    if (first) { focusEl(first); return false; }
+    return true;
+  }
+
+  function buildPayload() {
+    const reporter = state.user_type === "REPORTER";
+    const context = reporter
+      ? {
+          duration_empty: state.reporter_duration || null,
+          vacancy_signs: state.sign,
+          vacancy_signs_other: state.sign.indexOf("something-else") > -1 ? (state.reporter_sign_detail || null) : null,
+          additional_information: state.reporter_anything || null
+        }
+      : {
+          duration_empty: state.owner_duration || null,
+          reasons: state.reason_shown ? state.reason : [],
+          reasons_other: state.reason.indexOf("something-else") > -1 ? (state.owner_reason_detail || null) : null,
+          additional_information: state.owner_anything || null
+        };
+
+    return {
+      user_type: state.user_type,
+      property: {
+        address_line1: state.address.display || "",
+        flat: state.address.flat || null,
+        building_name: state.address.building_name || null,
+        building_number: state.address.building_number || null,
+        street: state.address.street || null,
+        locality: state.address.locality || null,
+        town_city: state.address.town || "",
+        postcode: state.address.postcode || "",
+        address_source: state.address.manual ? "MANUAL" : "LOOKUP"
+      },
+      /* ACT-763 open item: the approved journey has no reporter-certainty
+         question, so this remains UNVERIFIED pending that specification
+         decision. The vacancy_signs above carry what the reporter told us. */
+      vacancy_confidence: reporter ? "UNVERIFIED" : undefined,
+      context: context,
+      reporter: reporter ? {
+        name: state.contact.full_name, email: state.contact.email,
+        telephone: state.contact.phone || null
+      } : undefined,
+      owner: !reporter ? {
+        name: state.contact.full_name, email: state.contact.email,
+        telephone: state.contact.phone
+      } : undefined,
+      privacy_notice_accepted: true,
+      privacy_notice_version: "1.2",
+      declaration_accepted: reporter ? !!state.declaration_accepted : undefined,
+      files: state.files,
+      website: ""
+    };
+  }
+
+  $("#contact-form").addEventListener("submit", async e => {
+    e.preventDefault();
+    if ($("#website").value) return;          /* SEC-4 honeypot */
+    $("#submit-error").textContent = "";
+    if (!validateContact()) return;
+
+    /* ACT-738 SEC-3 — fail closed. With no endpoint configured, or on any
+       failed request, no success state is shown. */
+    if (!REPORT_ENDPOINT) {
+      $("#submit-error").textContent = "Reporting is not yet connected. Nothing has been submitted and nothing has been confirmed.";
+      focusEl($("#submit-error"));
+      return;
+    }
+
+    const submitBtn = $('#contact-form button[type="submit"]');
+    submitBtn.disabled = true;
+    try {
+      const r = await fetch(REPORT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(buildPayload())
+      });
+      if (!r.ok) throw new Error("submit failed");
+      state.submission = await r.json();
+      save();
+      showStep(6);
+    } catch (err) {
+      $("#submit-error").textContent = "We couldn’t submit your information. Nothing has been confirmed. Please try again.";
+      focusEl($("#submit-error"));
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+
+  /* ---------------------------------------------------- step 6: post-submit */
+  function showPanel(id) {
+    ["#reporter-know-owner","#reporter-willing","#share-options","#known-owner-letter","#unknown-owner-offer","#generic-letter","#reporter-final"]
+      .forEach(s => { $(s).hidden = s !== id; });
+    focusEl($(id + " h2"));
+  }
+
+  $$("[data-knows-owner]").forEach(b => b.addEventListener("click", () => {
+    showPanel(b.dataset.knowsOwner === "yes" ? "#reporter-willing" : "#unknown-owner-offer");
+  }));
+  $$("[data-willing]").forEach(b => b.addEventListener("click", () => {
+    if (b.dataset.willing === "yes") showPanel("#share-options"); else showPanel("#reporter-final");
+  }));
+  $$("[data-letter-offer]").forEach(b => b.addEventListener("click", () => {
+    if (b.dataset.letterOffer === "yes") showPanel("#generic-letter"); else showPanel("#reporter-final");
+  }));
+  $("#show-letter").addEventListener("click", () => showPanel("#known-owner-letter"));
+  $$("[data-print]").forEach(b => b.addEventListener("click", () => window.print()));
+  $$("[data-final]").forEach(b => b.addEventListener("click", () => showPanel("#reporter-final")));
+
+  $("#copy-message").addEventListener("click", async () => {
+    const msg = "You may find ReportAnEmptyHome.co.uk useful. You can explore your options here: https://reportanemptyhome.co.uk/";
+    try {
+      await navigator.clipboard.writeText(msg);
+      $("#share-status").textContent = "Message copied.";
+    } catch (err) {
+      $("#share-status").textContent = "We couldn’t copy the message. You can select and copy it manually: " + msg;
+      return;
+    }
+    showPanel("#reporter-final");
+  });
+
+  $("#native-share").addEventListener("click", async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "Report an Empty Home", url: "https://reportanemptyhome.co.uk/" });
+      } catch (err) { return; }              /* person cancelled — stay put */
+    } else {
+      $("#share-status").textContent = "Sharing is not available in this browser. You can copy the message instead.";
+      return;
+    }
+    showPanel("#reporter-final");
+  });
+
+  /* ------------------------------------------------------------- restore */
+  /* ACT-738 UX-5 — a step can be linked to and survives a refresh. Step 6 is
+     only reachable with an accepted submission, so a reload never shows an
+     empty confirmation. */
+  function restore() {
+    const hash = String(location.hash);
+    if (hash.indexOf("#step-") !== 0) return;
+    const n = resolveStep(Number(hash.replace("#step-", "")));
+    if (!n) return;
+    history.replaceState({ step: n }, "", "#step-" + n);
+    showStep(n, false);
+  }
+  restore();
+})();
+</script>
+
+<footer><div class="wrap"><div class="footer-links"><a href="privacy.html">Privacy</a><a href="reporter-terms.html">Reporter Terms</a><a href="how-it-works.html">How it works</a></div></div></footer>
+</body>
+</html>
