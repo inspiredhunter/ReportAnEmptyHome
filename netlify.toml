@@ -6,7 +6,13 @@
 [build]
   publish = "."
   command = ""
+  functions = "netlify/functions"
 
-# Endpoint constants in the HTML are blank by default (ACT-738 SEC-2).
-# Supabase and Brevo keys are injected as Netlify environment variables at
-# deploy time and are never committed (ACT-738 SEC-1).
+# Serverless bridges hold every API key server-side (ACT-738 SEC-1).
+# Pages post to same-origin relative paths, so nothing is injected into the
+# HTML and no credential is ever present in page source.
+#
+#   /api/options   ACT-785  Empty Homes guide request -> Brevo (not yet built)
+#
+# Environment variables are set in Netlify, never committed:
+#   BrevoAPIKey, SUPABASE_URL, SUPABASE_ANON_KEY
